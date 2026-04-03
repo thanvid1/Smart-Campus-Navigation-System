@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {"id": "MainGate", "x": 0, "y": 10},
+    {"id": "Admin", "x": 0, "y": 6},
+    {"id": "Canteen", "x": -6, "y": 6},
+    {"id": "Library", "x": 0, "y": 2},
+    {"id": "ECE", "x": 5, "y": 8},
+    {"id": "MechCivil", "x": 7, "y": 6},
+    {"id": "Nursing", "x": 6, "y": 3}
+  ],
+
+  "edges": [
+    {"from": "MainGate", "to": "Admin", "weight": 4},
+    {"from": "Admin", "to": "MainGate", "weight": 4},
+
+    {"from": "MainGate", "to": "Canteen", "weight": 7},
+    {"from": "Canteen", "to": "MainGate", "weight": 7},
+
+    {"from": "MainGate", "to": "ECE", "weight": 6},
+    {"from": "ECE", "to": "MainGate", "weight": 6},
+
+    {"from": "Canteen", "to": "Library", "weight": 6},
+    {"from": "Library", "to": "Canteen", "weight": 6},
+
+    {"from": "Library", "to": "Nursing", "weight": 6},
+    {"from": "Nursing", "to": "Library", "weight": 6},
+
+    {"from": "Admin", "to": "Library", "weight": 4},
+    {"from": "Library", "to": "Admin", "weight": 4},
+
+    {"from": "Admin", "to": "Nursing", "weight": 5},
+    {"from": "Nursing", "to": "Admin", "weight": 5},
+
+    {"from": "ECE", "to": "MechCivil", "weight": 3},
+    {"from": "MechCivil", "to": "ECE", "weight": 3},
+
+    {"from": "MechCivil", "to": "Nursing", "weight": 4},
+    {"from": "Nursing", "to": "MechCivil", "weight": 4},
+
+    {"from": "Admin", "to": "MechCivil", "weight": 6},
+    {"from": "MechCivil", "to": "Admin", "weight": 6}
+  ]
+}
