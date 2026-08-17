@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {"id": "MainGate", "lat": 13.255361, "lon": 74.785528, "floor": 0},
+    {"id": "Admin", "lat": 13.254528, "lon": 74.785056, "floor": 0},
+    {"id": "Canteen", "lat": 13.254861, "lon": 74.784611, "floor": 0},
+    {"id": "Library", "lat": 13.254250, "lon": 74.784528, "floor": 0},
+    {"id": "ECE", "lat": 13.254750, "lon": 74.785556, "floor": 0},
+    {"id": "MechCivil", "lat": 13.254417, "lon": 74.785528, "floor": 0},
+    {"id": "Nursing", "lat": 13.254056, "lon": 74.785333, "floor": 0}
+  ],
+  "edges": [
+    {"from": "MainGate", "to": "Admin", "weight": 4},
+    {"from": "Admin", "to": "MainGate", "weight": 4},
+    {"from": "MainGate", "to": "Canteen", "weight": 7},
+    {"from": "Canteen", "to": "MainGate", "weight": 7},
+    {"from": "MainGate", "to": "ECE", "weight": 6},
+    {"from": "ECE", "to": "MainGate", "weight": 6},
+    {"from": "Canteen", "to": "Library", "weight": 6},
+    {"from": "Library", "to": "Canteen", "weight": 6},
+    {"from": "Library", "to": "Nursing", "weight": 6},
+    {"from": "Nursing", "to": "Library", "weight": 6},
+    {"from": "Admin", "to": "Library", "weight": 4},
+    {"from": "Library", "to": "Admin", "weight": 4},
+    {"from": "Admin", "to": "Nursing", "weight": 5},
+    {"from": "Nursing", "to": "Admin", "weight": 5},
+    {"from": "ECE", "to": "MechCivil", "weight": 3},
+    {"from": "MechCivil", "to": "ECE", "weight": 3},
+    {"from": "MechCivil", "to": "Nursing", "weight": 4},
+    {"from": "Nursing", "to": "MechCivil", "weight": 4},
+    {"from": "Admin", "to": "MechCivil", "weight": 6},
+    {"from": "MechCivil", "to": "Admin", "weight": 6}
+  ]
+}

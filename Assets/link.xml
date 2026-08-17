@@ -1,0 +1,6 @@
+<linker>
+  <assembly fullname="UnityEngine" preserve="all"/>
+  <assembly fullname="Unity.XR.ARFoundation" preserve="all"/>
+  <assembly fullname="Unity.XR.ARCore" preserve="all"/>
+  <assembly fullname="Assembly-CSharp" preserve="all"/>
+</linker>
